@@ -1,0 +1,981 @@
+
+/* - ploneCustom.css - */
+@media all {
+/* http://geoconfluences.ens-lyon.fr/portal_css/ploneCustom.css?original=1 */
+.exportChart_btn{
+position: absolute;
+right: 20em;
+padding: 0.4em;
+color: #fff;
+background: #666;
+}
+.exportChart_btn:hover{
+cursor:pointer;
+}
+canvas{
+max-width:1000px;
+}
+@keyframes chartjs-render-animation {
+from { opacity: 0.99; }
+to { opacity: 1; }
+}
+.chartjs-render-monitor {
+animation: chartjs-render-animation 0.001s;
+}
+.chartjs-size-monitor,
+.chartjs-size-monitor-expand,
+.chartjs-size-monitor-shrink {
+position: absolute;
+direction: ltr;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+overflow: hidden;
+pointer-events: none;
+visibility: hidden;
+z-index: -1;
+}
+.chartjs-size-monitor-expand > div {
+position: absolute;
+width: 1000000px;
+height: 1000000px;
+left: 0;
+top: 0;
+}
+.chartjs-size-monitor-shrink > div {
+position: absolute;
+width: 200%;
+height: 200%;
+left: 0;
+top: 0;
+}
+#content p,#content ul {
+font-size:18px;
+}
+.presentation-generale-du-dossier #content #plone-document-byline {
+background:none;
+}
+dl.portlet ul.navTree .navTreeCurrentItem {
+padding-left: 15px;
+}
+#document-toc .portletItem, #document-toc .portletItem > * {
+padding-left:0;
+margin-left:0;
+}
+#content-core ul {
+margin-bottom:2em;
+}
+#content-core ul li br {
+display:none;
+}
+#content-core h6.sous-titre-figure{
+margin-bottom:1em;
+border:none;
+text-align:center;
+margin:0;
+font-size:1.2em;
+font-family: 'Roboto Slab', serif;
+width:auto;
+}
+#content .discreet, #sidebar .discreet,#content .source-figure {
+color: #666;
+font-size: 85%;
+font-weight: normal;
+line-height: 18px;
+}
+#content table {
+width:100%!important;
+max-width:100%;
+table-layout:fixed;
+}
+#content table table table td {
+width:100%!important;
+max-width:100%;
+font-weight:normal;
+}
+#content table img {
+max-width:100%;
+height:auto!important;
+}
+body.cke_ltr {
+background:none!important;
+}
+#glossary ul.glossaryAbcedaire{
+margin-left:0px;
+margin-bottom:10px;
+z-index:1000;
+}
+#glossary .glossaryAbcedaire li{
+display:inline;
+list-style:none;
+padding:0.3em;
+z-index:10000;
+}
+#glossary ul.glossaryAbcedaire li a{
+z-index:10000;
+}
+img[onclick] {
+cursor:pointer;
+}
+table.corps td[valign]{
+padding:2em;
+}
+.hiddenStructure {
+height:0;
+}
+a:link, a:visited {
+color:#e44325;
+}
+a.internal-link,a.url {
+color:#e44325important;
+}
+a h2, a h3, a h4, a h5, a h6 {
+color:#e44325;
+}
+h6 {
+font-size:1.1em;
+}
+h5 {
+font-size:1.2em;
+}
+h4 {
+font-size:1.3em;
+}
+h3 {
+font-size:1.4em;
+}
+h2 {
+font-size:1.7em;
+}
+#collage h2, #collage h3,.template-dossiers-geoconfluences-view h2,.template-dossiers-geoconfluences-view h3,
+.template-dossier-documents-geoconfluences-view h2,.template-dossier-documents-geoconfluences-view h3 {
+margin:0;
+}
+.source-figure {
+font-style:italic;
+}
+.mentions-edition {
+font-style:italic;
+text-align:right;
+}
+.cke_styles {
+text-align:left!important;
+}
+#content a:link, dl.portlet a:link,.state-published {
+color:#e44325 !important;
+text-decoration:none;
+border:none;
+}
+#listing-table a:link,#listing-table dl.portlet a:link,#listing-table .state-published {
+color:#205C90 !important;
+}
+#listing-table a.contenttype-image,#listing-table a.contenttype-image:visited {
+color:#000!important;
+}
+#content a:visited, dl.portlet a:visited {
+color:#e44325
+}
+a:visited div.ImageBg p,dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {
+color:#e44325!important;
+}
+#content a:hover, dl.portlet a:hover {
+color:#b73710!important;
+}
+.portlet-collection-nouveautes-du-dossier .portletFooter {
+display:none;
+}
+#portal-siteactions {
+clear:left;
+background:#e44325;
+padding-top:2em;
+}
+#portal-siteactions a {
+color:#FFF;
+}
+.titremarron,.titrerouge,.gdtitrerubmarron {
+color:#00CE00;
+}
+.titrerubgris,.sstitrept,.sstitre,.sstitrevert,.sstitrerouge,.sstitregris {
+color:#000000;
+}
+.template-ploneglossary_view br + br {
+display:none;
+}
+.template-dossiers-geoconfluences-view .boite-dossier,.template-dossiers-geoconfluences-view .tileItem,
+.template-dossier-documents-geoconfluences-view .boite-dossier,.template-dossier-documents-geoconfluences-view .tileItem
+{
+display:inline-block;
+vertical-align:top;
+width:300px;
+height:225px;
+}
+.template-dossiers-geoconfluences-view .boite-dossier,.section-accueil #dossiers_thematiques,
+.template-dossier-documents-geoconfluences-view .boite-dossier {
+-moz-background-size:cover!important;
+-o-background-size:cover!important;
+background-size:cover!important;
+}
+.template-dossiers-geoconfluences-view .tileItem,
+.template-dossier-documents-geoconfluences-view .tileItem {
+margin:1em;
+overflow:hidden;
+}
+.template-dossiers-geoconfluences-view .tileItem .tileHeadline,
+.template-dossier-documents-geoconfluences-view .tileItem .tileHeadline {
+background:rgba(0,0,0,0.7);
+color:#FFF;
+line-height:1em;
+padding:0.5em;
+}
+.template-dossiers-geoconfluences-view .tileItem .description,
+.template-dossier-documents-geoconfluences-view .tileItem .description {
+background:rgba(255,255,255,0.7);
+color:#000;
+padding:0.2em;
+-webkit-transition:opacity 1s;
+-moz-transition:opacity 1s;
+-o-transition:opacity 1s;
+transition:opacity 1s;
+opacity:0;
+min-height:100%!important;
+}
+.template-dossiers-geoconfluences-view .tileItem a:hover .description,
+.template-dossier-documents-geoconfluences-view .tileItem a:hover .description {
+opacity:1;
+}
+.template-dossiers-geoconfluences-view #dossiers-view,
+.template-dossier-documents-geoconfluences-view #dossiers-view {
+margin:0 auto;
+}
+.navigation-glossaire dd{
+background-image:url(fleche.gif) no-repeat;
+}
+.navigation-glossaire dd a {
+background: #eee;
+margin:0 0 2px 0;
+height: auto;
+display: block;
+line-height: auto;
+padding: 1%;
+width:98,5%;
+}
+.navigation-glossaire dd a:hover {
+background:#B7361F;
+color: #fff !important;
+}
+.navigation-glossaire dd a.currentItem{
+background:#E44325;
+color:#fff !important;
+font-weight:bold;
+width:98,5%;
+margin:0;
+}
+#glossary div.glossaireParLettre{
+display:block;
+float:left;
+position:relative;
+width:30%;
+margin: 1% 1% 1% 0;
+min-height:100px;
+}
+div.glossaireParLettre:nth-child(3n+0) {
+clear:left;
+}
+#glossary div.glossaireParLettre h4{
+display:block;
+background:#333;
+opacity:0.9;
+color:#fff;
+width:99%;
+padding-left:1%;
+}
+#glossary div.glossaireParLettre:empty{
+display:none;
+}
+dt.portletHeader {
+background:url("imagesui/picto-titre-portlet.png") no-repeat scroll 2px center #DDDDDD!important;
+padding-left:25px!important;
+text-transform:uppercase;
+color:grey;
+padding:0.42em 1em;
+}
+dl.portlet dt.portletHeader a {
+color:grey!important;
+}
+.section-collage-accueil #content {
+background:none;
+padding:0;
+}
+.section-collage-accueil .portlet {
+background:white;
+border:1px solid #DDD;
+}
+.section-collage-accueil h1 {
+display:none;
+}
+.section-collage-accueil #content dd {
+margin:0;
+}
+.section-collage-accueil .collage-item {
+background:none;
+margin:0;
+padding:0;
+}
+.section-collage-accueil .documentActions,.section-collage-accueil #portal-breadcrumbs {
+display:none;
+}
+.portletgeoconfluencesActualites ul{
+margin-left:0!important;
+}
+.portletgeoconfluencesActualites li{
+list-style-type:none;
+padding:0.4em 0  0.4em 0.4em;
+}
+.portletgeoconfluencesActualites h3{
+color:#47b749;
+padding-left:0.5em;
+font-weight:normal;
+font-size:1.25em;
+}
+.portletgeoconfluencesActualites li a,
+.portlet-collection-derniere-lettre-dinformation dd a{
+background:url("imagesui/picto-geo-actu.png") no-repeat left center;
+padding:0.5em 0 0.5em 25px;
+}
+.portlet-collection-derniere-lettre-dinformation .conteneur-donnees h3{
+padding-left:1.5em;
+}
+.portletgeoconfluencesActualites li.even {
+background:#f7f7f7;
+}
+.portletgeoconfluencesActualites .portletItemDetails {
+display:inline;
+color:black;
+margin-left:0;
+}
+.portletgeoconfluencesRandomDossier img,
+#notion-a-la-une img,#debat-a-la-une img,#carte-a-la-une img,#image-a-la-une img {
+float:left;
+margin:0 1em 1em 0;
+}
+.portlet-collection-derniere-lettre-dinformation img,
+.portlet-collection-derniere-lettre-dinformation h5#infoAuteurs{
+display:none;
+}
+#notion-a-la-une,#debat-a-la-une,#carte-a-la-une  {
+overflow:hidden;
+}
+#infoPublication.discreet p,#plone-document-byline div {
+margin:0;
+padding-left:20px;
+}
+.theme-default .nivoSlider {
+margin-bottom:0!important;
+box-shadow:none!important;
+float:left;
+margin-top:-34px;
+margin-top:0;
+height:290px;
+z-index:0;
+}
+.theme-default .nivo-controlNav {
+padding:7px 0;
+background:#0f110f;
+clear:left;
+}
+.derniers-ajouts .portletFooter {
+display:none;
+}
+#content {
+overflow:hidden;
+}
+#portal-breadcrumbs {
+margin-bottom:0;
+}
+#portal-breadcrumbs a {
+display:inline;
+}
+#portlets-below {
+width:auto;
+left:0;
+margin:0 1em;
+}
+#portlets-below div.cell{
+clear:both;
+}
+#portlets-below .portlet {
+background:white;
+}
+#portlets-below .BelowPortletManager1.width-1\:3 {
+width:100%;
+margin-left:-100%;
+clear:none;
+}
+#portlets-below .BelowPortletManager2.width-1\:3,
+#portlets-below .BelowPortletManager5.width-1\:3.position-2\:3,
+#portlets-below .BelowPortletManager4.width-1\:3.position-1\:3 {
+clear:left;
+width:48.75%;
+margin-left:-100%;
+display:inline-block !important;
+}
+#portlets-below .BelowPortletManager3.width-1\:3 {
+width:48.75%;
+}
+#portlets-below .BelowPortletManager3.position-2\:3 {
+margin-left:-49.75%;
+}
+/* */
+#portal-column-content.width-3\:4 .portletCollection dd.portletItem a,
+.portlet-collection-corpus-documentaire dd a,.portlet-collection-articles-scientifiques dd a,
+.portlet-collection-derniers-articles-scientifiques dd a,.portlet-collection-nature-et-religion dd a,
+.portlet-collection-fait-religieux-et-nature dd a,.portlet-collection-corpus-documentaires dd a {
+background:url("imagesui/picto-geo-actu.png") left center no-repeat;
+padding:0.5em 0 0.5em 25px;
+}
+#portal-column-content.width-3\:4 .portletCollection dd.portletItem.even,
+.portlet-collection-corpus-documentaire dd.even,.portlet-collection-articles-scientifiques dd.even,
+.portlet-collection-derniers-articles-scientifiques dd.even,.portlet-collection-nature-et-religion dd.even,
+.portlet-collection-fait-religieux-et-nature dd.even,.portlet-collection-corpus-documentaires dd.even {
+background:#f7f7f7;
+}
+.portlet-collection-corpus-documentaire dd.portletFooter a,
+.portlet-collection-articles-scientifiques dd.portletFooter a,
+.portlet-collection-derniers-articles-scientifiques dd.portletFooter a,.portlet-collection-nature-et-religion dd.portletFooter a,
+.portlet-collection-fait-religieux-et-nature dd.portletFooter a,.portlet-collection-corpus-documentaires dd.portletFooter a  {
+background:none;
+}
+.portlet-collection-corpus-documentaire .portletItemDetails,.portlet-collection-articles-scientifiques .portletItemDetails,
+.portlet-collection-derniers-articles-scientifiques .portletItemDetails,.section-collage-accueil .portletItemDetails {
+display:inline;
+color:black!important;
+margin-left:0;
+}
+.portletgeoconfluencesRandomDossier {
+display:block;
+position:relative;
+top:-19px;
+margin-bottom:0!important;
+}
+.portletgeoconfluencesRandomDossier dd.portletItem {
+display:table-cell;
+}
+.nouveautes dd.portletItem {
+width:33%;
+}
+.portlet-collection-nuage-de-mots {
+text-align:center;
+}
+.portlet-collection-nuage-de-mots .portletHeader {
+text-align:left;
+}
+.portlet-collection-nuage-de-mots img {
+display:none;
+}
+.portlet-collection-nuage-de-mots dd.portletItem {
+display:inline;
+padding:0!important;
+}
+.portlet-collection-nuage-de-mots dd.portletItem:nth-child(3n+0) a {
+font-size:150%;
+font-weight:bold;
+color:#e32b09!important;
+}
+.portlet-collection-nuage-de-mots dd.portletItem:nth-child(5n+0) a {
+font-size:130%;
+color:#E44325!important;
+}
+.portlet-collection-nuage-de-mots dd.portletItem a {
+color:#e06149!important;
+padding-left:0.5em;
+}
+#content .documentActions ul {
+margin-left:0;
+margin-top:10px;
+}
+li#document-action-print {
+list-style:none;
+background:url("imagesui/picto-print.png") left center no-repeat;
+padding:0.5em 0.5em 0.5em 20px;
+display:inline;
+}
+li#document-action-sendto {
+list-style:none;
+background:url("imagesui/picto-send.png") left center no-repeat;
+padding:0.5em 0.5em 0.5em 20px;
+display:inline;
+}
+li#document-action-pdf {
+list-style:none;
+background:url("imagesui/picto-pdf.png") left center no-repeat;
+padding:0.5em 0.5em 0.5em 20px;
+display:inline;
+}
+li#document-action-rss {
+list-style:none;
+background:url("imagesui/picto-rss.png") left center no-repeat;
+padding:0.5em 0.5em 0.5em 20px;
+display:inline;
+}
+body.cke_show_borders {
+overflow:visible!important;
+}
+.corps {
+font-family:Arial,FreeSans,sans-serif;
+font-size:12.8px;
+}
+#content-views,#edit-bar,#contentActionMenus,#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {
+background-color:#00CF00;
+border-color:#00CF00;
+}
+.template-ploneglossarydefinition_view p{
+text-align:justify;
+}
+h1.documentFirstHeading{
+margin-bottom:1%;
+}
+dl.portlet {
+font-size:100%;
+}
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+border-bottom: 0.1em dotted #DDDDDD;
+line-height: 1.5em;
+padding: 0.15em 0.5em;
+}
+dl.dernieres-ressources-a-la-une,dl.dernier-dossier-thematique,dl.dernier-dossier-regional,
+dl.portlet-collection-derniers-articles-scientifiques,dl.nouveautes,
+dl.portlet-collection-articles-scientifiques,dl.portlet-collection-corpus-documentaire,
+dl.portlet-collection-veille-derniere-publication,dl.portlet-collection-eclairage-derniere-publication,
+.section-actualites dl.portletgeoconfluencesActualites,dl.portlet-collection-nature-et-religion,
+dl.portlet-collection-fait-religieux-et-nature,dl.portlet-collection-corpus-documentaires {
+line-height:1.5em;
+}
+.coin_dossier {
+position:absolute;
+bottom:5px;
+}
+#content .documentDescription {
+margin:1em 0 1em 0;
+}
+#content div.documentByLine {
+font-size:90%;
+margin-bottom:1em;
+}
+#lien_concours a {
+background:url(imagesui/picto-concours.png) left center no-repeat;
+padding:10px 0 10px 25px;
+}
+#lien_classes a {
+background:url(imagesui/picto-classe.png) left center no-repeat;
+padding:10px 0 10px 25px;
+}
+.portlet-collection-voir-aussi dd.portletItem {
+border-bottom: 0.1em dotted #DDDDDD;
+line-height: 1.5em;
+padding:0.6em !important;
+}
+dl.portlet ul.navTree .navTreeCurrentItem {
+color:black!important;
+background:url("imagesui/picto-nav-dossier-noir.png") left top no-repeat;
+border:none;
+margin-left:0;
+margin-right:0;
+}
+table[bordercolor] {
+border-color:black!important;
+}
+table td,table th {
+padding:10px;
+font-size:18px;
+}
+table table td,table table th {
+padding:0 0 0 5px;
+}
+.section-collage-accueil #plone-document-byline {
+display:none!important;
+}
+.managePortletsAboveLink, .managePortletsBelowLink, .manageFooterPortletsLink, .manageInHeaderPortletsLink {
+margin:0;
+}
+.titrerouge,.titrevert {
+color: #47B749;
+font-size: 1.25em;
+line-height:1.2em;
+font-weight:bold;
+}
+.portletRss dd {
+margin:0!important;
+padding:0.5em !important;
+}
+.portletRss dd.even {
+background:#f7f7f7;
+}
+.portletRss .portletItemDetails {
+display:inline;
+color:black!important;
+margin-left:0;
+}
+#document-toc {
+display:block;
+float:inherit;
+margin:0;
+width:100%;
+}
+#document-toc  .portletHeader {
+margin-left:0;
+}
+.listingBar span.current {
+padding:2px 5px;
+}
+#content fieldset {
+border:none;
+background:#fad9d3;
+}
+#footnote-popup{
+padding:5px;
+position:absolute;
+background:#EEF3F5;
+z-index:10000;
+border:1px solid #436976;
+width:50%;
+text-align:left;
+font-size:0.8em;
+}
+.portletgeoconfluencesRandomDossier .portletFooter {
+display:table-footer-group;
+padding:1em;
+}
+div.diaporama{
+display:none;
+}
+body.cke_show_borders div.diaporama{
+display:block;
+}
+div.acces-diaporama{
+border:1px solid #eee;
+padding:1em;
+width:60%;
+max-width:400px;
+margin:0 auto;
+box-shadow: 2px 2px 10px #000;
+-moz-box-shadow: 2px 2px 10px #000;
+-webkit-box-shadow: 2px 2px 10px #000;
+-o-box-shadow: 2px 2px 10px #000;
+border-radius: 5px 5px 5px 5px;
+}
+.portlet-collection-eclairage-derniere-publication dd.portletItem a,.portlet-collection-veille-derniere-publication dd.portletItem a {
+background:url("imagesui/picto-geo-actu.png") left center no-repeat;
+padding:0.5em 0 0.5em 25px;
+}
+dl#portlet-classification dd,dl#portlet-objects-pedagogiques dd {
+padding:0.5em;
+}
+#search-exist .criteresSearch, #search-exist .criteresSearchTheme {
+border:none;
+box-shadow:none;
+}
+#actualites_veille,#actualites_eclairage {
+padding:1em;
+}
+#content li {
+margin-bottom:0;
+}
+p {
+text-align:justify;
+}
+dl#document-toc.portlet.toc ol.TOC1Digit{
+list-style-type:none !important;
+}
+div#criteresSearch + dl {
+margin-top:1em;
+}
+.portletgeoconfluencesRandomDossier.debat-a-la-une #debat-a-la-une {
+display:table;
+}
+.portletgeoconfluencesRandomDossier.debat-a-la-une #debat-a-la-une .bouton_dossiers {
+display:table-footer-group;
+text-transform:lowercase;
+}
+.portletgeoconfluencesRandomDossier.debat-a-la-une #debat-a-la-une .bouton_dossiers:before {
+content:"Les archives du ";
+text-transform:none;
+}
+.portletgeoconfluencesRandomDossier.carte-a-la-une #carte-a-la-une {
+display:table;
+}
+.portletgeoconfluencesRandomDossier.carte-a-la-une #carte-a-la-une .bouton_dossiers {
+display:table-footer-group;
+text-transform:lowercase;
+}
+.portletgeoconfluencesRandomDossier.carte-a-la-une #carte-a-la-une .bouton_dossiers:before {
+content:"Les archives de la ";
+text-transform:none;
+}
+.portletgeoconfluencesRandomDossier.image-a-la-une #image-a-la-une {
+display:table;
+}
+.portletgeoconfluencesRandomDossier.image-a-la-une #image-a-la-une .bouton_dossiers {
+display:table-footer-group;
+text-transform:lowercase;
+}
+.portletgeoconfluencesRandomDossier.image-a-la-une #image-a-la-une .bouton_dossiers:before {
+content:"Les archives de l'";
+text-transform:none;
+}
+.portletgeoconfluencesRandomDossier.notion-a-la-une #notion-a-la-une {
+display:table;
+}
+.portletgeoconfluencesRandomDossier.notion-a-la-une #notion-a-la-une .bouton_dossiers {
+display:table-footer-group;
+text-transform:lowercase;
+}
+.portletgeoconfluencesRandomDossier.notion-a-la-une #notion-a-la-une .bouton_dossiers:before {
+content:"Les archives de la ";
+text-transform:none;
+}
+#portlet-classification dd.portletFooter a{
+color: #47B749;
+background-color:#fad9d3;
+display: block;
+margin-left: -0.55em;
+padding: 0.5em;
+width: 100%;
+}
+.bgGreen{
+background-color:#fad9d3;
+}
+.bgGreen td{
+padding:15px;
+}
+#wrapper {
+height:100%;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-pack:justify;
+-webkit-justify-content:space-between;
+-ms-flex-pack:justify;
+justify-content:space-between;
+}
+#maCarte, #photo_wrapper{
+width:50%;
+}
+#carte {
+display:inline-block;
+height:100%;
+width:auto;
+}
+#photo_wrapper img{
+width:100%;
+display:inline-block;
+}
+#portlets-below.row {
+float:none;
+}
+hr{
+text-align:left;
+size:1;
+width:33%;
+margin: 1% 0;
+}
+#footNote{
+font-style:italic;
+}
+.section-a-propos div#plone-document-byline,
+.section-glossaire div#plone-document-byline{
+display:none;
+}
+#portal-column-content {
+background:#FFF;
+}
+.section-collage-accueil .portlet {
+border:none;
+}
+dt.portletHeader {
+background:none !important;
+padding-left:0 !important;
+}
+body {
+font-family: 'Roboto', sans-serif;
+font-size:16px;
+}
+body {
+background: url(imagesui/geoc-corona-bridge.jpg)  #FFF no-repeat center top;
+-webkit-background-size:100%;
+-moz-background-size:100%;
+-o-background-size:100%;
+background-size:100%;
+}
+.nav-primary {
+background:none;
+margin-right:0.7em;
+}
+#portal-searchbox {
+margin-top:0;
+}
+#slogan {
+top:40px;
+left: 154pt;
+padding:0.5em;
+background:none;
+font-size:150%;
+color:#000;
+}
+#content {
+font-size:100%;
+}
+.veille-liens, .veille-parutions, .veille-breves, .veille-evenements, .veille-archives, .veille-concours-examens-programmes, .veille-revues-de-presse{
+color:#fff;
+display:inline-block;
+font-weight:normal;
+width:130px;
+padding:0.5em;
+margin-bottom:1em;
+border-radius:5px;
+}
+.veille-liens{
+background:#e6b800;
+}
+.veille-parutions{
+background:#00b3b3;
+}
+.veille-breves{
+background:#cc0088;
+}
+.veille-evenements{
+background:#ff6600;
+}
+.veille-concours-examens-programmes{
+background:#006699;
+}
+.veille-revues-de-presse{
+background:#ace600;
+}
+.veille-archives{
+background:#666;
+}
+body.eclairage .veille-archives{
+display:none;
+}
+#portal-column-two dl.portlet.portletCollection dd.portletFooter a:link, #portal-column-two dl.portlet.portletCollection dd.portletFooter a:hover, #portal-column-two dl.portlet.portletCollection dd.portletFooter a:visited,
+#content dl.portlet.portletCollection dd.portletFooter a:link, #content dl.portlet.portletCollection dd.portletFooter a:hover, #content dl.portlet.portletCollection dd.portletFooter a:visited{
+background: #E44325;
+border-bottom: 3px solid #E44325;
+border-radius: 5px 5px 5px 5px;
+display: inline-block;
+color: #FFFFFF !important;
+margin: 5px;
+padding: 2px 5px;
+}
+#content .portlet-collection-les-reseaux-transeuropeens-de-transport dd.portletFooter a:visited,
+#content .portlet-collection-les-reseaux-transeuropeens-de-transport dd.portletFooter a:link
+{
+color: #FFFFFF !important;
+}
+#portal-column-content.width-3\:4 .portletCollection dd{
+margin: 0 0 1em 0;
+}
+img.photo {
+height:auto;
+width:auto;
+}
+#container-beforeAfter img{
+max-width:none;
+}
+.portletgeoconfluencesRandomDossier .vignetteView{
+min-width:250px;
+position:relative;
+display: table-cell;
+}
+.portletItem .vignetteView img{
+width:100% !important;
+margin-left: 0;
+}
+#content dd .vignetteView #infoPublication {
+display: block;
+padding:1%;
+font-size: 20px;
+width: 98%;
+bottom: 0;
+}
+.vignetteView p.portletItemDetails {
+font-size: 100%;
+margin: 0;
+padding: 0.2em 0em;
+}
+#content dd .sommaireView #infoPublication, #content .sommaireView #infoPublication
+{
+display: flow-root;
+}
+.sommaireView .conteneur-image,
+.portletCollection .conteneur-image{
+padding:0;
+margin:0 1em 0 0;
+float:left;
+display:block;
+}
+.portletCollection .conteneur-donnees{
+display:flow-root;
+top: -2em;
+position: relative;
+}
+.sommaireView .conteneur-donnees{
+display:flow-root;
+top: -1em;
+position: relative;
+}
+#content .sommaireView p.portletItemDetails,
+.portletCollection .conteneur-donnees .portletItemDetails {
+background: #272727;
+color: #FFFFFF !important;
+display: block;
+font-size: 85% !important;
+margin: 0;
+padding:5px;
+width:110px;
+}
+#portal-column-content.width-3\:4 .portletCollection dd.portletItem a{
+background:none;
+}
+a #infoAuteurs,
+.sommaireView a .itemDescription {
+color:#333;
+}
+#glossary-definition-popup h6{
+font-size:1.2em;
+font-weight:bolder;
+}
+span.highlightedGlossaryTerm{
+z-index: auto;
+background:none;
+position: relative;
+display: inline-block;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+#glossary-definition-popup{
+padding:5px;
+position: absolute;
+top: 125%;
+left: 50%;
+margin-left:-100%;
+background:#EEF3F5;
+z-index:1000;
+border:1px solid #436976;
+min-width:380px;
+text-align:left;
+font-size:0.8em;
+}
+#content {
+overflow: visible;
+}
+#edit-bar{
+margin-top:5em;
+}
+}
+

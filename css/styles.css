@@ -1,0 +1,68 @@
+body{
+    margin: 40px auto;
+}
+section.top page{ display: flex;
+height: 60vh;margin: left 60px; 
+}
+header{display: flex; 
+    margin-left: 40px; 
+    background-color: rgb(222, 217, 217);
+    margin-right: 100px;
+
+} 
+img.nour{margin-left: 20px;
+    width: 140px; border-radius: 50%;box-shadow: 0px 0px 10px; 
+    box-shadow: 100px;
+}
+div.t{margin-left: 50px;
+    display: flex; 
+    flex-direction: column;
+}
+
+h2.dt{
+    margin-left: auto;
+    background-color: rgb(222, 217, 217);
+    margin-right: auto;
+    line-height: 50px;
+}
+div.cont{margin-left: 40px;
+    margin-right: 100px; 
+    border: solid;
+    border-color: rgb(222, 217, 217);
+    border-top: 0px;
+    justify-content: baseline;
+}
+header.div{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between:center;
+
+}
+div.list{
+    background-color: white;
+    list-style: none;
+    padding: 20px;
+}
+div.li{
+    background-color: white;
+    list-style: none;
+    padding: 20px;
+    color: rgb(57, 203, 203);
+
+}
+div.competence{
+    margin-left: 40px;
+    margin-right: 100px; 
+    border: solid;
+    border-color: rgb(222, 217, 217);
+    border-top: 0px;
+    
+}
+h2.competence{
+    background-color: rgb(222, 217, 217);
+    line-height: 50px;
+
+}
+
